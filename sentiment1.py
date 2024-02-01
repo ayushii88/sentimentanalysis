@@ -8,7 +8,7 @@ def extract_features(words):
 
 #loading reviews from the corpus
 fileids_pos = movie_reviews.fileids('pos')
-print(fileids_pos)
+#print(fileids_pos)
 fileids_neg = movie_reviews.fileids('neg')
 
 #extract the features and label accordingly
@@ -61,7 +61,7 @@ for review in input_reviews:
     predicted_sentiment = probabilities.max()
     
     #print outputs
-    print("Predicted Sentiment: ",predicted_sentiment)
+    print("Predicted : ",predicted_sentiment)
     print("Probability: ", round(probabilities.prob(predicted_sentiment),2))
     
     
